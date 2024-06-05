@@ -366,17 +366,17 @@ document.addEventListener('DOMContentLoaded', function() {
     return userBoard;
   }
 
-  function compareBoards(puzzleBoard, userBoard) {
-    for (let row = 0; row < 9; row++) {
-      for (let col = 0; col < 9; col++) {
-        if (puzzleBoard[row][col] !== userBoard[row][col]) {
-          return false;
-        }
-      }
-    }
+  // function compareBoards(puzzleBoard, userBoard) {        TESTING IF THIS FUNCTION IS NEEDED ANYMORE
+  //   for (let row = 0; row < 9; row++) {
+  //     for (let col = 0; col < 9; col++) {
+  //       if (puzzleBoard[row][col] !== userBoard[row][col]) {
+  //         return false;
+  //       }
+  //     }
+  //   }
   
-    return true;
-  }
+  //   return true;
+  // }
 
   function highlightCells(isValid) {
     const cells = boardElement.getElementsByClassName('cell');
